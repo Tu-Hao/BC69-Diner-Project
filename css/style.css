@@ -1,9 +1,6 @@
 * {
   font-family: "quicksand", sans-serif;
   scroll-behavior: smooth;
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
 }
 .container {
   width: 100%;
