@@ -58,6 +58,7 @@ header #seach {
   top: 16px;
   color: black;
   font-size: 14px;
+  cursor: pointer;
 }
 header form {
   top: 40px;
@@ -69,6 +70,9 @@ header .moon {
   position: absolute;
   right: 69px;
   font-size: 27px;
+}
+header .bars{
+  cursor: pointer;
 }
 header i {
   position: absolute;
@@ -90,9 +94,102 @@ header .banner_content a {
   border-radius: 5px;
   text-decoration: none;
   border: 2px solid white;
-  padding: 17px 55px;
-  text-align: center;
-  
+  padding: 17px 52px;
+  color: white;
+  transition: all 0.5s;
+}
+header a:hover {
+  color: #ff6600;
+  background-color: white;
+}
+/* About us */
+.about .about_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 96px 0;
+}
+.about .content_left {
+  width: 42%;
+}
+.about .content_left h3 {
+  font-family: "Pacifico", cursive;
+  color: #ff6600;
+}
+.about .content_left span {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+.about .content_right {
+  width: 58%;
+  color: #5b606c;
+  margin-left: 70px;
+  font-size: 17px;
+}
+/* book */
+.book .book_img {
+  background-image: url(./../img/banner3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+.book .book_img {
+  grid-row: 1 / 3;
+}
+.book .book_img::before {
+  content: "";
+  background: rgb(16 15 19 / 46%);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.book {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+.book p {
+  color: #ffccc9;
+}
+.book .book_top {
+  background-color: #ff6600;
+  padding: 65px 70px 0;
+}
+.book .book_top .sub_title {
+  font-family: "Pacifico", cursive;
+}
+.book .book_bot {
+  background-color: #ff6600;
+  height: 80%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 70px;
+}
+.book .book_bot i {
+  border-radius: 5px;
+  padding: 20px;
+  background-color: white;
+  color: #ff6600;
+  font-size: 25px;
+}
+.book .book_bot h5 {
+  margin-left: -20px;
+}
+.book .bot_left i,
+.book .bot_right i {
+  transition: all 0.5s;
+}
+.book .bot_left:hover i,
+.book .bot_right:hover i {
+  color: #ffc600;
 }
 /* Footer */
 .w3l-footer-29-main {
