@@ -193,7 +193,62 @@ header a:hover {
   color: #ffc600;
 }
 /* HomePage Testimonials */
-
+.title-subhny {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 1px;
+  color: #ff6600;
+  display: block;
+  font-family: "Pacifico", cursive;
+}
+.title-w3l {
+  font-size: 38px;
+  line-height: 48px;
+  font-weight: 600;
+}
+.w3l-clients a.comment-img {
+  left: 0px;
+  top: 0px;
+  width: 85px;
+  height: 85px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.w3l-clients span.fa.fa-quote-left {
+  font-size: 22px;
+  color: #ff6600;
+  display: block;
+}
+.w3l-clients blockquote q {
+  font-size: 24px;
+  line-height: 36px;
+  color: #232121;
+  font-weight: 600;
+}
+.w3l-agency-test .testimonial-content {
+  max-width: 700px;
+  margin: auto;
+}
+.testimonial .people-info h3 {
+  margin: 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+.w3l-clients p.indentity {
+  font-size: 18px;
+  font-style: normal;
+  margin-bottom: 0;
+  text-align: left;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+  background: #ff6600;
+}
 /* Footer */
 .w3l-footer-29-main {
   background: black;
