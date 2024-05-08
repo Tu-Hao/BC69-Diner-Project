@@ -45,7 +45,7 @@ header {
   background-repeat: no-repeat;
   background-position: initial;
   background-attachment: fixed;
-  min-height: 700px;
+  min-height: 680px;
   height: 680px;
 }
 header .container-fluid {
@@ -71,7 +71,7 @@ header .moon {
   right: 69px;
   font-size: 27px;
 }
-header .bars{
+header .bars {
   cursor: pointer;
 }
 header i {
@@ -87,6 +87,9 @@ header .banner_content h2 {
   font-weight: 600;
   text-transform: capitalize;
   color: #fff;
+}
+header .banner_content h2 #br {
+  display: none;
 }
 header .banner_content a {
   font-size: 16px;
@@ -120,6 +123,7 @@ header a:hover {
   font-size: 38px;
   line-height: 48px;
   font-weight: 600;
+  display: block;
 }
 .about .content_right {
   width: 58%;
@@ -135,7 +139,6 @@ header a:hover {
   background-repeat: no-repeat;
   display: block;
   width: 100%;
-  height: 90%;
   position: relative;
 }
 .book .book_img {
@@ -155,6 +158,8 @@ header a:hover {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  background-color: #ff6600;
+  height: 90vh;
 }
 .book p {
   color: #ffccc9;
@@ -168,7 +173,6 @@ header a:hover {
 }
 .book .book_bot {
   background-color: #ff6600;
-  height: 80%;
   display: flex;
   justify-content: flex-start;
   padding-left: 70px;
@@ -230,4 +234,144 @@ header a:hover {
   flex-wrap: wrap;
   margin-right: -15px;
   margin-left: -15px;
+}
+/* responsive */
+@media screen and (max-width: 1300px) {
+  .book .book_img {
+    background-color: #ffc600;
+    width: 95%;
+    height: 82vh;
+    top: 35px;
+  }
+}
+/* 992px */
+@media screen and (max-width: 992px) {
+  header .banner_content h2 {
+    padding-top: 4000px;
+    font-size: 44px;
+    line-height: 53px;
+  }
+  header .banner_content h2 br,
+  header .banner_content p br {
+    display: none;
+  }
+  /* about us */
+  .about .about_content {
+    display: inline;
+    padding: 20px 5px;
+  }
+  .about .about_content .content_left,
+  .about .about_content .content_right {
+    display: inline;
+  }
+  .about .content_left .title {
+    font-size: 30px !important;
+    line-height: 38px;
+    display: inline-block;
+  }
+  .about .content_right br,
+  .about .content_left span br {
+    display: none;
+  }
+  /* book */
+  .book {
+    display: inline-block;
+    height: 70vh;
+  }
+  .book .book_top {
+    padding: 90px 20px 20px 20px;
+  }
+  .book .book_top p {
+    padding-bottom: 0 !important;
+  }
+  .book .book_bot {
+    padding: 20px;
+  }
+  .book .book_bot p {
+    font-size: 16px;
+  }
+  .book br {
+    display: none;
+  }
+  .book h3 {
+    font-size: 31px !important;
+    line-height: 38px;
+  }
+  .book .book_img {
+    background-color: #ffc600;
+    width: 95%;
+    height: 20vh;
+    top: 50px;
+    left: 27px;
+  }
+}
+/* 576px */
+@media screen and (max-width: 576px) {
+  header form .form-control,
+  header form #seach {
+    display: none;
+  }
+  header .banner_content h2 {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  header .banner_content h2 br,
+  header .banner_content p br {
+    display: none;
+  }
+  header .banner_content p {
+    padding-bottom: 10px !important;
+  }
+  header {
+    min-height: 600px;
+    height: 600px;
+  }
+  /* about us */
+  .about .about_content {
+    display: inline;
+    padding: 20px 5px;
+  }
+  .about .about_content .content_left,
+  .about .about_content .content_right {
+    display: inline;
+  }
+  .about .content_left .title {
+    font-size: 30px !important;
+    line-height: 38px;
+    display: inline-block;
+  }
+  .about .content_right br,
+  .about .content_left span br {
+    display: none;
+  }
+  .book {
+    display: inline-block;
+    height: 70vh;
+  }
+  .book .book_top {
+    padding: 90px 20px 20px 20px;
+  }
+  .book .book_top p {
+    padding-bottom: 0 !important;
+  }
+  .book .book_bot {
+    padding: 20px;
+  }
+  .book .book_bot p {
+    font-size: 16px;
+  }
+  .book br {
+    display: none;
+  }
+  .book h3 {
+    font-size: 31px !important;
+    line-height: 38px;
+  }
+  .book .book_img {
+    background-color: #ffc600;
+    width: 95%;
+    height: 20vh;
+    top: 45px;
+    left: 15px;
+  }
 }
