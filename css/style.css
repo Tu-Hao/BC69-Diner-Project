@@ -192,6 +192,74 @@ header a:hover {
 .book .bot_right:hover i {
   color: #ffc600;
 }
+/* Homepage Blog post */
+.w3l-blogposts {
+  background: #f7f7f7;
+}
+.w3l-blogposts .card {
+  background-color: transparent;
+  border: none;
+}
+.w3l-blogposts .card .card-header:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+
+.post-thumbnail img {
+  width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  height: auto;
+  border-style: none;
+}
+.w3l-blogposts .post-pos {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.w3l-blogposts a {
+  color: #ff6600;
+  text-decoration: none;
+}
+.w3l-blogposts a.blog-desc {
+  display: block;
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: 600;
+  color: #232121;
+  margin-top: 25px;
+  margin-bottom: 15px;
+}
+.w3l-blogposts .p-footer {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.w3l-blogposts .p-meta-info a {
+  font-weight: 700;
+  color: #232121;
+  letter-spacing: 0.02em;
+}
+.w3l-blogposts a.read {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #232121;
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+.w3l-blogposts a.read:hover {
+  color: #ff6600;
+}
+.w3l-blogposts .p-meta-info img {
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+  border-radius: 50%;
+}
 /* HomePage Testimonials */
 .title-subhny {
   font-size: 20px;
@@ -246,7 +314,8 @@ header a:hover {
   opacity: 0.8;
   margin-top: 4px;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background: #ff6600;
 }
 /* Footer */
@@ -357,12 +426,12 @@ header a:hover {
   --offset: 500px;
   position: sticky;
   bottom: 50px;
-  left: 1840px;
+  left: 1830px;
   place-self: end;
   margin-top: calc(100vh + var(--offset));
   /* visual styling */
   border-radius: 50%;
-  padding: 15px;
+  padding: 15px 18px;
   background: #ff6600;
   color: white;
   text-align: center;
