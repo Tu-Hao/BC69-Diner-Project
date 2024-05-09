@@ -137,6 +137,7 @@ header a:hover {
   display: block;
   width: 100%;
   position: relative;
+  height: 100%;
 }
 .book .book_img {
   grid-row: 1 / 3;
@@ -156,7 +157,7 @@ header a:hover {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   background-color: #ff6600;
-  height: 90vh;
+  height: 100%;
 }
 .book p {
   color: #ffccc9;
@@ -184,6 +185,10 @@ header a:hover {
 .book .book_bot h5 {
   margin-left: -20px;
 }
+/* .book .bot_left,
+.book .bot_right{
+height: 50%;
+} */
 .book .bot_left i,
 .book .bot_right i {
   transition: all 0.5s;
@@ -192,6 +197,7 @@ header a:hover {
 .book .bot_right:hover i {
   color: #ffc600;
 }
+
 /* HomePage Testimonials */
 .title-subhny {
   font-size: 20px;
@@ -477,6 +483,7 @@ header a:hover {
   .about .content_left span br {
     display: none;
   }
+  /* book  */
   .book {
     display: inline-block;
     height: 70vh;
