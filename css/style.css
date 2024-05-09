@@ -246,7 +246,8 @@ header a:hover {
   opacity: 0.8;
   margin-top: 4px;
 }
-.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
   background: #ff6600;
 }
 /* Footer */
@@ -289,7 +290,6 @@ header a:hover {
   margin-right: -15px;
   margin-left: -15px;
 }
-/* -----------------------------Phúc------------------------------------- */
 .w3l-footer-29-main h6.footer-title-29 {
   font-size: 22px;
   line-height: 28px;
@@ -357,12 +357,12 @@ header a:hover {
   --offset: 500px;
   position: sticky;
   bottom: 50px;
-  left: 1840px;
+  left: 1290px;
   place-self: end;
   margin-top: calc(100vh + var(--offset));
   /* visual styling */
   border-radius: 50%;
-  padding: 15px;
+  padding: 15px 18px;
   background: #ff6600;
   color: white;
   text-align: center;
