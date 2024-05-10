@@ -195,15 +195,44 @@ header a:hover {
 /* Homepage What's new */
 .news-title {
   text-align: center;
+  margin-top: 100px;
 }
 .news-title .title-sub{
   font-size: 20px;
   color: #ff6600;
   font-family: "Pacifico", cursive;
+  margin-bottom: 10px;
 }
 .news-title .title-text{
   font-size: 38px;
   line-height: 48px;
+  margin-bottom: 40px;
+}
+.news-card{
+  display: inline-block;
+}
+.card-img a img{
+  max-width: 365px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  transition: all 0.3s;
+}
+.card-img:hover a img{
+  opacity: 0.9;
+}
+.card-info{
+  position: absolute;
+  left: 50px;
+  bottom: 32px;
+  color: #ff6600;
+}
+.card-info a{
+  text-decoration: none;
+  color: white;
+  font-size: 30px;
+
 }
 
 /* Homepage Blog post */
