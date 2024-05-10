@@ -192,6 +192,20 @@ header a:hover {
 .book .bot_right:hover i {
   color: #ffc600;
 }
+/* Homepage What's new */
+.news-title {
+  text-align: center;
+}
+.news-title .title-sub{
+  font-size: 20px;
+  color: #ff6600;
+  font-family: "Pacifico", cursive;
+}
+.news-title .title-text{
+  font-size: 38px;
+  line-height: 48px;
+}
+
 /* Homepage Blog post */
 .w3l-blogposts {
   background: #f7f7f7;
