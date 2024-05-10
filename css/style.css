@@ -98,7 +98,7 @@ header .banner_content a {
   color: white;
   transition: all 0.5s;
 }
-header a:hover {
+header .banner_content a:hover {
   color: #ff6600;
   background-color: white;
 }
@@ -363,8 +363,9 @@ height: 50%;
   --offset: 500px;
   position: sticky;
   bottom: 50px;
-  left: 1290px;
-  place-self: end;
+  left: 9999px;
+  margin-right: 20px;
+  place-self: start end;
   margin-top: calc(100vh + var(--offset));
   /* visual styling */
   border-radius: 50%;
