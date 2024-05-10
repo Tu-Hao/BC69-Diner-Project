@@ -55,6 +55,11 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.5.2/css/sharp-light.css"
     >
+    <!-- CDN animate min css -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <!-- link css -->
     <link
       rel="stylesheet"
@@ -377,12 +382,32 @@ referrerpolicy="no-referrer"
   </div>
 </section>
     
-  <!-- Homepage Blog post -->
-
-<section>
   
+
+<!-- home page video popup section -->
+<section class="w3l-videohny" id="video">
+  <div class="new-block py-5">
+    <div class="container py-lg-5 HomePageVideoPopup">
+      <div class="history-info position-relative">
+        <style>
+
+        </style>
+        <a href="#small-dialog" class="popup-with-zoom-anim play-view text-center pl-3">
+          <span class="video-play-icon">
+            <span class="fa fa-play"></span>
+          </span>
+        </a>
+      </div>
+
+      <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+      <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+        <iframe src="https://player.vimeo.com/video/305185528"  frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- Homepage Blog post -->
 <section class="w3l-blogposts py-5" id="blogs">
   <div class="container py-md-5 py-2 HomePageBlog">
     <div class="header-title text-center">
