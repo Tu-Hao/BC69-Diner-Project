@@ -539,8 +539,8 @@ div#small-dialog iframe {
   --offset: 500px;
   position: sticky;
   bottom: 50px;
-  left: 1830px;
-  place-self: end;
+  left: 9999px;
+  margin-right: 20px;
   margin-top: calc(100vh + var(--offset));
   /* visual styling */
   border-radius: 50%;
