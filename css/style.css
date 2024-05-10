@@ -98,7 +98,7 @@ header .banner_content a {
   color: white;
   transition: all 0.5s;
 }
-header a:hover {
+header .banner_content a:hover {
   color: #ff6600;
   background-color: white;
 }
