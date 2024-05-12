@@ -283,7 +283,7 @@ header .banner_content a:hover {
       0 0 0 20px rgb(255 255 255 / 25%), 0 0 0 40px rgba(50, 100, 245, 0);
   }
 }
-.w3l-videohny #small-dialog {
+#small-dialog {
   max-width: 750px;
   margin: 40px auto;
   position: relative;
@@ -296,6 +296,13 @@ div#small-dialog iframe {
 }
 .mfp-hide {
   display: none !important;
+}
+.mfp-close-btn-in .mfp-close {
+  color: #fff;
+}
+.mfp-close,
+.mfp-close:active {
+  top: -40px;
 }
 .w3l-videohny span.video-play-icon:hover {
   transform: scale(1.2);

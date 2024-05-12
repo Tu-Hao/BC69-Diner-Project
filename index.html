@@ -88,9 +88,12 @@ integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7g
 crossorigin="anonymous"
 referrerpolicy="no-referrer"
 />
-
+<!-- Magnific Popup core CSS file -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" integrity="sha512-+EoPw+Fiwh6eSeRK7zwIKG2MA8i3rV/DGa3tdttQGgWyatG/SkncT53KHQaS5Jh9MNOT3dmFL0FjTY08And/Cw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- link style.css -->
     <link rel="stylesheet" href="./css/style.css" />
+    <!-- link index.js -->
+    <link rel="stylesheet" href="./js/index.js">
     <!-- Icon web -->
     <link rel="shortcut icon" href="./img/w3layout.jpeg" type="image/x-icon" />
   </head>
@@ -711,6 +714,29 @@ integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2i
 crossorigin="anonymous"
 referrerpolicy="no-referrer"
 ></script>
+<!-- Magnific Popup core JS file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js" integrity="sha512-IsNh5E3eYy3tr/JiX2Yx4vsCujtkhwl7SLqgnwLNgf04Hrt9BT9SXlLlZlWx+OK4ndzAoALhsMNcCmkggjZB1w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+  $(document).ready(function () {
+    $('.popup-with-zoom-anim').magnificPopup({
+      type: 'inline',
+
+      fixedContentPos: false,
+      fixedBgPos: true,
+
+      overflowY: 'auto',
+
+      closeBtnInside: true,
+      preloader: false,
+
+      midClick: true,
+      removalDelay: 300,
+      mainClass: 'my-mfp-zoom-in'
+    });
+});
+
+</script>
+
     <!-- cdn owlcarousel2 js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
@@ -740,6 +766,7 @@ referrerpolicy="no-referrer"
   })
 </script>
 <!-- //script for tesimonials carousel slider -->
+
   </body>
   <!-- Bootstrap JavaScript Libraries -->
     <script
