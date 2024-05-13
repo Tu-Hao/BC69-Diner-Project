@@ -125,7 +125,7 @@ header .text p {
   border: 1px solid transparent;
   font-size: 18px;
   padding-left: 20px;
-  width: 100%;
+  width: 98.5%;
   border-radius: 5px;
   height: 169px;
   margin-bottom: 100px;
@@ -149,7 +149,7 @@ header .text p {
   cursor: pointer;
   transition: all 0.5s;
   top: 170px;
-  right: 0.5px;
+  right: 18px;
 }
 .contact button:hover {
   opacity: 0.8;
@@ -310,5 +310,53 @@ header .text p {
   header form .form-control,
   header form #seach {
     display: none;
+  }
+  .find_content {
+    /* width: 100vw; */
+    display: block !important;
+  }
+  .find_content .content_left {
+    width: 100vw;
+  }
+  .find_content .content_left br {
+    display: none;
+  }
+  .find_content .content_left h6 {
+    font-size: 18px;
+  }
+  .find_content .content_left h3 {
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  .find .content_right {
+    width: 100%;
+  }
+  .find .content_right iframe {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .find_content {
+    /* width: 100vw; */
+    display: block !important;
+  }
+  .find_content .content_left {
+    width: 100vw;
+  }
+  .find_content .content_left br {
+    display: none;
+  }
+  .find_content .content_left h6 {
+    font-size: 18px;
+  }
+  .find_content .content_left h3 {
+    padding-bottom: 20px;
+    font-size: 30px;
+  }
+  .find .content_right {
+    width: 100%;
+  }
+  .find .content_right iframe {
+    height: 400px;
   }
 }
