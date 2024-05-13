@@ -720,6 +720,12 @@ div#small-dialog iframe {
   transition: 0.3s ease-in;
   border-radius: 5px;
   border: 2px solid transparent;
+
+}
+.btn-white {
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
 }
 .w3l-copyright {
   padding: 1.2em 0;
