@@ -36,7 +36,7 @@ html {
 /* header */
 header {
   background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
-    url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner1.jpg);
+    url(./../img/banner1.jpg);
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
