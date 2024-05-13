@@ -70,6 +70,7 @@ header .moon {
 }
 header .bars {
   cursor: pointer;
+  color: white;
 }
 header i {
   position: absolute;
@@ -102,6 +103,30 @@ header .banner_content a:hover {
   color: #ff6600;
   background-color: white;
 }
+/* bars  */
+#menu {
+  position: absolute;
+  left: 44%;
+}
+
+#menu ul {
+  list-style: none;
+  margin-top: 590px;
+}
+#menu ul li {
+  text-align: center;
+  padding-bottom: 20px;
+  transition: all 0.5s;
+}
+#menu ul li:hover a{
+  color: #ff6600;
+}
+#menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
+
 /* About us */
 .about .about_content {
   display: flex;
