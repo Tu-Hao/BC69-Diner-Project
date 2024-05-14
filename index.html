@@ -98,28 +98,70 @@ referrerpolicy="no-referrer"
   </head>
 
   <body>
+<!-- header  -->
+<header>
+  <div class="container">
 
-    <header>
-      <div class="container">
+    <nav class="navbar pt-4">
+<div class="container-fluid text-white">
+<div class="left">
+  <a href="#" class="navbar-brand text-white fs-2 fw-bold">Diner</a>
+</div>
 
-        <nav class="navbar pt-4">
-        <div class="container-fluid text-white">
-        <div class="left">
-          <a href="#" class="navbar-brand text-white fs-2 fw-bold">Diner</a>
-        </div>
-    
-        <div class="right">
-          <form   role="search">
-            <input class="form-control me-4 p-2 position-relative" type="search" placeholder="Search here.." aria-label="Search">
-            <i id="seach" class="fa-solid fa-magnifying-glass position-absolute "></i>
-      
-          </form>
-        </div>
-        <i class="fa-regular fa-moon moon"></i>
-        <i class="fa-solid fa-bars bars"></i>
-      </div>
-      </nav>
+<div class="right">
+  <form   role="search">
+  <input class="form-control me-4 p-2 position-relative" type="search" placeholder="Search here.." aria-label="Search">
+  <i id="seach" class="fa-solid fa-magnifying-glass position-absolute "></i>
+  
+</form>
+</div>
+<i class="fa-regular fa-moon moon"></i>
+ 
 
+
+
+  <div id="menu">
+<ul>
+  <li><a href="./index.html">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Services</a></li>
+  <li><a href="#">Blog Posts</a></li>
+  <li><a href="./404page/index.html">404 page</a></li>
+  <li><a href="#">Elements</a></li>
+  <li><a href="./contact/index.html">Contact</a></li>
+  <li><a href="#">Landing page</a></li>
+  <button type="button" id="overlay-close">
+    <!-- <i class="overlay-close fa-solid fa-circle-xmark" aria-hidden="true">
+
+    </i> -->
+  </button>
+</ul>
+
+</div>
+
+<div id="menuIcon">
+<i class="fa-solid fa-bars bars"></i>
+</div>
+
+</div>
+</nav>
+<script>
+document.getElementById("menuIcon").addEventListener("click", function() {
+var menu = document.getElementById("menu");
+if (menu.style.display === "none") {
+  menu.style.display = "inline-block";
+} else {
+  menu.style.display = "none";
+}
+});
+
+</script>
+<script>
+document.getElementsById("overlay-close").addEventListener("click", function() {
+var menu = document.getElementById("menu");
+  menu.style.display = "none";
+});
+</script>
 <!-- text -->
       <div class="banner_content text-white">
           <h2 class="pt-5 ps-1">The only thing we <br> love <br id="br"> more than food <br>is you!</h2>
