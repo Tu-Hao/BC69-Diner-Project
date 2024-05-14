@@ -1,19 +1,4 @@
-$(document).ready(function () {
-    $('.popup-with-zoom-anim').magnificPopup({
-      type: 'inline',
-
-      fixedContentPos: false,
-      fixedBgPos: true,
-
-      overflowY: 'auto',
-
-      closeBtnInside: true,
-      preloader: false,
-
-      midClick: true,
-      removalDelay: 300,
-      mainClass: 'my-mfp-zoom-in'
-    });
+document.getElementById("overlay-close").addEventListener("click", function () {
+  var menu = document.getElementById("menu");
+  menu.style.display = "none";
 });
-
-  

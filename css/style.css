@@ -104,6 +104,9 @@ header .banner_content a:hover {
   background-color: white;
 }
 /* bars  */
+/* .layout-menu.none {
+  display: none;
+} */
 #menu {
   display: none;
   position: absolute;
