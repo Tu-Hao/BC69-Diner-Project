@@ -90,6 +90,56 @@ header .text p {
   margin-bottom: 0;
   margin-left: 5px;
 }
+/* bars  */
+/* .layout-menu.none {
+  display: none;
+} */
+#menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: -500%;
+  background-color: rgb(6 3 0 / 77%);
+  width: 100%;
+  text-align: center;
+}
+#menu #overlay-close {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  margin-top: 15px;
+  border: none;
+  background: #ff6600;
+  color: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+#menu #overlay-close::before {
+  font-family: "Font Awesome 6 Free";
+  content: "\58";
+  display: inline-block;
+  vertical-align: middle;
+  font-weight: 1000;
+  color: white;
+}
+
+#menu ul {
+  list-style: none;
+  margin-top: 590px;
+}
+#menu ul li {
+  text-align: center;
+  padding-bottom: 20px;
+  transition: all 0.5s;
+}
+#menu ul li:hover a {
+  color: #ff6600;
+}
+#menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+}
 
 /* content  */
 .content h1 {
