@@ -15,5 +15,7 @@ $(document).ready(function () {
       mainClass: 'my-mfp-zoom-in'
     });
 });
-
+function turnOffLayout() {
+  document.getElementById("layout").style.display = "none";
+}
   
