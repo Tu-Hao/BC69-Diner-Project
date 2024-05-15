@@ -75,27 +75,71 @@
 
   </head>
 <body>
-    <header>
-        <div class="container">
-          
-  
-          <nav class="navbar pt-4">
-    <div class="container-fluid text-white">
-      <div class="left">
-        <a href="#" class="navbar-brand text-white fs-2 fw-bold">Diner</a>
-      </div>
-      
-      <div class="right">
-        <form   role="search">
-        <input class="form-control me-4 p-2 position-relative" type="search" placeholder="Search here.." aria-label="Search">
-        <i id="seach" class="fa-solid fa-magnifying-glass position-absolute "></i>
-        
-      </form>
-      </div>
-      <i class="fa-regular fa-moon moon"></i>
-      <i class="fa-solid fa-bars bars"></i>
-    </div>
-  </nav>
+  <!-- header  -->
+  <header>
+    <div class="container">
+
+      <nav class="navbar pt-4">
+        <div class="container-fluid text-white">
+          <div class="left">
+            <a href="#" class="navbar-brand text-white fs-2 fw-bold">Diner</a>
+          </div>
+
+          <div class="right">
+            <form role="search">
+              <input class="form-control me-4 p-2 position-relative" type="search" placeholder="Search here.."
+                aria-label="Search">
+              <i id="seach" class="fa-solid fa-magnifying-glass position-absolute "></i>
+
+            </form>
+          </div>
+          <i class="fa-regular fa-moon moon"></i>
+
+
+
+          <div class="layout-menu">
+            <div id="menu">
+              <ul>
+                <li><a href="./../index.html">Home</a></li>
+                <li><a href="./../Aboutpage/index.html">About</a></li>
+                <li><a href="./service.html">Services</a></li>
+                <li><a href="#">Blog Posts</a></li>
+                <li><a href="./../404page/index.html">404 page</a></li>
+                <li><a href="#">Elements</a></li>
+                <li><a href="./../contact/index.html">Contact</a></li>
+                <li><a href="./../LandingPage/index.html">Landing page</a></li>
+                <button href="#menuIcon" type="button" id="overlay-close"></button>
+              </ul>
+            </div>
+          </div>
+          <div id="menuIcon">
+            <i class="fa-solid fa-bars bars"></i>
+          </div>
+
+        </div>
+      </nav>
+      <!-- <script>
+document
+  .querySelector('#overlay-close')
+  .addEventListener('click', document.querySelector('.layout-menu').style.display = 'none');
+</script> -->
+      <!-- <script>
+        document.getElementById("overlay-close").onclick = function () {
+          document.querySelector('.layout-menu').classList.add("none")
+
+        };
+      </script> -->
+      <script>
+        document.getElementById("menuIcon").addEventListener("click", function () {
+          var menu = document.getElementById("menu");
+          if (menu.style.display === "none") {
+            menu.style.display = "inline-block";
+          } else {
+            menu.style.display = "none";
+          }
+        });
+
+      </script>
   <!-- text  -->
   <div class="text text-center">
   
@@ -122,6 +166,241 @@
             
         </div>
       </section>
+      <!-- service -->
+      <section class="service">
+        <div class="container text-center">
+          <div class="row">
+            <div class="service-item col-6 col-sm-3">
+              <div class="serviceitem-title">
+                <div class="service-icon">
+                  <span><i class="fa-solid fa-users"></i>
+                  </span>       
+                 </div>
+                 <div class="service-content">
+                  <span>01</span>
+                  <a href="#url">
+                    <h3>Soup</h3>
+                  </a>
+                 </div>
+              </div>
+               <div class="service-text">
+                <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+               </div>
+            </div>
+            <div class="service-item col-6 col-sm-3">
+              <div class="serviceitem-title">
+                <div class="service-icon">
+                  <span><i class="fa-solid fa-shield-halved"></i>
+                  </span>       
+                 </div>
+                 <div class="service-content">
+                  <span>02</span>
+                  <a href="#url">
+                    <h3>Drinks</h3>
+                  </a>
+                 </div>
+              </div>
+               <div class="service-text">
+                <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+               </div>
+            </div>
+            <div class="service-item col-6 col-sm-3">
+              <div class="serviceitem-title">
+                <div class="service-icon">
+                  <span><i class="fa-light fa-temperature-list"></i>
+                  </span>       
+                </div>
+               <div class="service-content">
+                  <span>03</span>
+                  <a href="#url">
+                   <h3>Pizza</h3>
+                  </a>
+               </div>
+              </div>
+             <div class="service-text">
+              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+             </div></div>
+          
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+          
+            <div class="service-item col-6 col-sm-3">
+              <div class="serviceitem-title">
+                <div class="service-icon">
+                  <span><i class="fa-solid fa-hands-asl-interpreting"></i>
+                  </span>       
+                </div>
+                <div class="service-content">
+                  <span>04</span>
+                  <a href="#url">
+                    <h3>Breakfast</h3>
+                  </a>
+                </div>
+              </div>
+              <div class="service-text">
+                <span><p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p></span>
+              </div></div>
+              <div class="service-item col-6 col-sm-3">
+                <div class="serviceitem-title">
+                  <div class="service-icon">
+                    <span><i class="fa-solid fa-paintbrush"></i>
+                    </span>       
+                  </div>
+                  <div class="service-content">
+                    <span>05</span>
+                   <a href="#url">
+                      <h3>Lunch</h3>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-text">
+                  <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+                </div>
+              </div>
+            <div class="service-item col-6 col-sm-3">
+              <div class="serviceitem-title">
+                <div class="service-icon">
+                  <span><i class="fa-solid fa-eraser"></i>
+                  </span>       
+                </div>
+                <div class="service-content">
+                  <span>06</span>
+                  <a href="#url">
+                    <h3>Dinner</h3>
+                  </a>
+                </div>
+              </div>
+             <div class="service-text">
+              <p>Lorem ipsum dolor sit amet consectetur ipsum elit. Qui eligendi vitae sit.</p>
+             </div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- middle -->
+    <section class="middle position-relative">
+      <div class="middle-img">
+        <img src="./../img/banner2.jpg" alt="">
+      </div>
+      <div class="middle-content">
+        <div class="middle-text">
+          <h1>Deliciousness jumping into<br> the mouth.</h1>
+        </div>
+        <div class="middle-button">
+          <a href="#url" class="btn-first">
+            <span>Read More<i class="fa-solid fa-chevron-right"></i></span>
+          </a>
+          <a href="#url" class="btn-second">
+            <span>Contact Us<i class="fa-solid fa-chevron-right"></i></span>
+          </a>
+        </div>
+        
+      </div>
+    </section>
+    <section class="plans">
+      <div class="container">
+        <div class="plans-title">
+          <h6>Plans</h6>
+          <h3>Our Menu</h3>
+        </div>
+        <div class="plans-content">
+          <div class="plans-first">
+            <div class="first-item">
+              <div class="content-item">
+                <div class="title-item">
+                  <h6>Slow Cooked Egg</h6>
+                </div>
+                <div class="price-item">
+                  <h6>$79.50</h6>
+                </div>
+              </div>
+              <div class="text-item">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+              <div class="content-item">
+                <div class="title-item">
+                  <h6>Ravioli</h6>
+                </div>
+                <div class="price-item">
+                  <h6>$63.75</h6>
+                </div>
+              </div>
+              <div class="text-item">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+              <div class="content-item">
+                <div class="title-item">
+                  <h6>Chicken Salad</h6>
+                </div>
+                <div class="price-item">
+                  <h6>$70.50</h6>
+                </div>
+              </div>
+              <div class="text-item">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+              <div class="content-item">
+                <div class="title-item">
+                  <h6>Sweet Heat Salad</h6>
+                </div>
+                <div class="price-item">
+                  <h6>$58.25</h6>
+                </div>
+              </div>
+              <div class="text-item">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+          </div>
+            <div class="second-item">
+              <div class="content-item">
+                <div class="title-item">
+                  <h6>Spinach Chicken</h6>
+                </div>
+                <div class="price-item">
+                  <h6>$63.75</h6>
+                </div>
+              </div>
+              <div class="text-item">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+              <div class="content-item">
+                <div class="title-item">
+                  <h6>Tomahawk Steak</h6>
+                </div>
+                <div class="price-item">
+                  <h6>$70.50</h6>
+                </div>
+              </div>
+              <div class="text-item">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+              <div class="content-item">
+                <div class="title-item">
+                  <h6>Cornish Turbot</h6>
+                </div>
+                <div class="price-item">
+                  <h6>$58.25</h6>
+                </div>
+              </div>
+              <div class="text-item">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+              <div class="content-item">
+                <div class="title-item">
+                  <h6>Permanent Waving</h6>
+                </div>
+                <div class="price-item">
+                  <h6>$79.50</h6>
+                </div>
+              </div>
+              <div class="text-item">
+                <p>Lorem ipsum dolor sit amet adipiscing.</p>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
       <footer>
         <section class="w3l-footer-29-main">
           <div class="footer-29 py-5">
@@ -194,7 +473,8 @@
     
     <!-- backtotop -->
     <a href="#" class="backtotop"><i class="fa fa-angle-up"></i></a>
-
+ <!-- link index.js -->
+ <script src="./../js/index.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 <!-- Bootstrap JavaScript Libraries -->
 <script
