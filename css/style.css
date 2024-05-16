@@ -218,16 +218,12 @@ header .banner_content a:hover {
 }
 /*--//inner-banner-section--*/
 
-/* .middle {
-  background: url(../images/banner2.jpg) no-repeat center;
+.middle {
+  background: url(./../img/banner2.jpg) no-repeat center;
   background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -ms-background-size: cover;
   position: relative;
   z-index: 1;
-} */
+}
 
 .middle:before {
   content: "";
